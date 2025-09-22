@@ -40,3 +40,16 @@ Some modules of the course are reflected in a branch and merged into `main` once
   - Razor Pages  
 
 ---
+## ▶️ Running the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Karimshady81/ShopProject.git
+   cd ShopProject
+
+2. dotnet restore
+
+3. dotnet run
+
+4. Open in browser
+
+---
