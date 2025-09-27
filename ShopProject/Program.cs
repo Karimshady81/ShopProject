@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ShopProject.Models;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,13 @@ builder.Services.AddScoped<IShoppingCart, ShoppingCart>(sp => ShoppingCart.GetCa
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddControllersWithViews();
+
+builder.Services.AddControllersWithViews()
+                .AddJsonOptions(options => //this tell ASP.NET when serializing to ignore cycles 
+                {
+                    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+                });
+
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ShopProjectDbContext>(options =>
 {
