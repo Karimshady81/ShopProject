@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ShopProject.App;
 using ShopProject.Models;
 using System.Text.Json.Serialization;
 
@@ -21,6 +22,9 @@ builder.Services.AddControllersWithViews()
                 });
 
 builder.Services.AddRazorPages();
+builder.Services.AddRazorComponents()
+          .AddInteractiveServerComponents();
+
 builder.Services.AddDbContext<ShopProjectDbContext>(options =>
 {
     options.UseSqlServer(
@@ -40,12 +44,19 @@ if (app.Environment.IsDevelopment())
 }
 
 //This is a middleware that routes to the pages/views we are going to have
-app.MapDefaultControllerRoute(); //"{controller=Home}/{action=Index}/{id?}"
+//app.MapDefaultControllerRoute(); //"{controller=Home}/{action=Index}/{id?}"
 
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.UseAntiforgery();
+
 app.MapRazorPages();
+
+app.MapRazorComponents<App>()
+        .AddInteractiveServerRenderMode();
 
 DbInitializer.Seed(app);
 app.Run();
