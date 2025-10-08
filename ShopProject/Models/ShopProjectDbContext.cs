@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace ShopProject.Models
 {
-    public class ShopProjectDbContext : DbContext
+    public class ShopProjectDbContext : IdentityDbContext
     {
         public ShopProjectDbContext(DbContextOptions<ShopProjectDbContext> options) : base(options)
         {
