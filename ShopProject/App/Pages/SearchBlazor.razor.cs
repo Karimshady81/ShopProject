@@ -3,7 +3,7 @@ using ShopProject.Models;
 
 namespace ShopProject.App.Pages
 {
-    partial class SearchBlazor
+    public partial class SearchBlazor
     {
         public string SearchText = "";
         public List<Pie> FilteredPies { get; set; } = new List<Pie>();
