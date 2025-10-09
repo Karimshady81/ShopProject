@@ -1,9 +1,19 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ShopProject.App;
 using ShopProject.Models;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString
+    ("ShopProjectDbContextConnection") ?? throw new InvalidOperationException
+    ("Connection string 'ShopProjectDbContextConnection' not found.");
+
+builder.Services.AddDbContext<ShopProjectDbContext>(options =>
+    options.UseSqlServer(connectionString)); ;
+
+builder.Services.AddDefaultIdentity<IdentityUser>()
+    .AddEntityFrameworkStores<ShopProjectDbContext>();
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IPieRepository, PieRepository>();
