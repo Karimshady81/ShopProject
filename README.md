@@ -1,11 +1,11 @@
 # 🏬 ShopProject  
 
-A complete ASP.NET Core MVC web application. 
+A complete ASP.NET Core MVC and Blazor Server web application.  
 This project demonstrates modern web development concepts using the MVC pattern, Entity Framework Core, and real-world features such as routing, model binding, validation, testing, interactivity, and authentication/authorization.
 
 ---
 
-## 🧩 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [Branches](#branches)
@@ -15,21 +15,21 @@ This project demonstrates modern web development concepts using the MVC pattern,
 - [How to Run](#how-to-run)
 - [Testing](#testing)
 - [Learnings](#learnings)
-- [Future Improvements](#future-improvements)
 - [License](#license)
 
 ---
 
-## 🪄 Overview
+## Overview
 
-The project combines ASP.NET Core MVC and Blazor Server components to deliver both traditional server-rendered pages and rich, interactive UI experiences.
-Each branch represents a different milestone , starting with MVC basics and progressing toward a complete, functional web app with authentication.
+The project combines **ASP.NET Core MVC** and **Blazor Server components** to deliver both traditional server-rendered pages and rich, interactive UI experiences.  
+Each branch represents a different milestone, starting with MVC basics and progressing toward a complete, functional web app with authentication.
 
 ---
 
-## ✨ Features
+## Features
 
 - ASP.NET Core MVC architecture  
+- Blazor Server components for interactive UI and real-time updates  
 - Entity Framework Core with a real **SQL Server LocalDB** database  
 - Routing and navigation  
 - Razor views with model binding and validation  
@@ -41,7 +41,7 @@ Each branch represents a different milestone , starting with MVC basics and prog
 
 ---
 
-## 🌿 Branches
+## Branches
 
 | Branch | Description |
 |--------|--------------|
@@ -55,18 +55,18 @@ Each branch isolates one core learning module to make it easy to explore the cod
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - **.NET 8 / ASP.NET Core MVC**  
-- **Entity Framework Core (SQL Server LocalDB)**
-- **Blazor Server** for interactive UI components and dynamic client updates
-- **Razor Pages & Tag Helpers** for templating and page rendering
+- **Blazor Server** for interactive UI components and dynamic client updates  
+- **Entity Framework Core (SQL Server LocalDB)**  
+- **Razor Pages & Tag Helpers** for templating and page rendering  
 - **xUnit** (testing framework)  
 - **Bootstrap / CSS / JS** for styling and interactivity  
 
 ---
 
-## 📁 Architecture
+## Architecture
 
 ```
 ShopProject/
@@ -74,6 +74,7 @@ ShopProject/
 ├── Controllers/         # Handles user requests and routing
 ├── Models/              # Domain models + EF Core entities
 ├── Views/               # Razor views (strongly typed)
+├── Pages/               # Blazor Server components (if any)
 ├── wwwroot/             # Static assets (CSS, JS, images)
 ├── Data/                # EF Core DbContext and migrations
 ├── Migrations/          # Auto-generated EF migrations
@@ -84,7 +85,7 @@ ShopProject/
 
 ---
 
-## 🗄️ Database Setup
+## Database Setup
 
 Make sure SQL Server LocalDB is installed.  
 Then run the following commands in the terminal:
@@ -104,7 +105,7 @@ Sample connection string (inside `appsettings.json`):
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 Clone the repo and restore dependencies:
 
@@ -119,7 +120,7 @@ Visit: **https://localhost:5001/** (or the port shown in the console)
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Unit tests are located under `/ShopProjectTests`.
 
@@ -135,19 +136,20 @@ Covers:
 
 ---
 
-## 🧠 Learnings
+## Learnings
 
 This project reinforced key ASP.NET Core concepts including:
 - MVC pattern and separation of concerns  
-- Blazor Server, Routing, Razor syntax, and Tag Helpers  
+- Blazor Server integration with Razor and MVC  
 - Working with EF Core (DbContext, Migrations, LINQ)  
 - Model validation (Data Annotations + server/client side)  
 - Authentication and Authorization via Identity  
 - Writing and running automated tests  
-- Managing feature branches with Git and GitHub
+- Managing feature branches with Git and GitHub  
 
 ---
 
-## 📜 License
+## License
+
 This project is open for educational purposes.  
 Feel free to fork or clone for learning, practice, or portfolio use.
