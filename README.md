@@ -1,6 +1,6 @@
 # 🏬 ShopProject  
 
-A complete ASP.NET Core MVC web application built as part of **Gill Cleeren’s _ASP.NET Core 6 Fundamentals_** course on Pluralsight.  
+A complete ASP.NET Core MVC web application. 
 This project demonstrates modern web development concepts using the MVC pattern, Entity Framework Core, and real-world features such as routing, model binding, validation, testing, interactivity, and authentication/authorization.
 
 ---
@@ -22,8 +22,8 @@ This project demonstrates modern web development concepts using the MVC pattern,
 
 ## 🪄 Overview
 
-This project was built step-by-step by following the **ASP.NET Core 6 Fundamentals** path.  
-Each branch represents a different milestone from the course, starting with MVC basics and progressing toward a complete, functional web app with authentication.
+The project combines ASP.NET Core MVC and Blazor Server components to deliver both traditional server-rendered pages and rich, interactive UI experiences.
+Each branch represents a different milestone , starting with MVC basics and progressing toward a complete, functional web app with authentication.
 
 ---
 
@@ -58,8 +58,9 @@ Each branch isolates one core learning module to make it easy to explore the cod
 ## 🧱 Tech Stack
 
 - **.NET 8 / ASP.NET Core MVC**  
-- **Entity Framework Core (SQL Server LocalDB)**  
-- **Razor Pages & Tag Helpers**  
+- **Entity Framework Core (SQL Server LocalDB)**
+- **Blazor Server** for interactive UI components and dynamic client updates
+- **Razor Pages & Tag Helpers** for templating and page rendering
 - **xUnit** (testing framework)  
 - **Bootstrap / CSS / JS** for styling and interactivity  
 
@@ -138,22 +139,12 @@ Covers:
 
 This project reinforced key ASP.NET Core concepts including:
 - MVC pattern and separation of concerns  
-- Routing, Razor syntax, and Tag Helpers  
+- Blazor Server, Routing, Razor syntax, and Tag Helpers  
 - Working with EF Core (DbContext, Migrations, LINQ)  
 - Model validation (Data Annotations + server/client side)  
 - Authentication and Authorization via Identity  
 - Writing and running automated tests  
-- Managing feature branches with Git and GitHub  
-
----
-
-## 🚀 Future Improvements
-
-- Add pagination, filtering, and sorting  
-- Introduce repository/service layers for cleaner architecture  
-- Improve UI design using Bootstrap 5  
-- Deploy on Azure or Render  
-- Add CI/CD pipeline (GitHub Actions)  
+- Managing feature branches with Git and GitHub
 
 ---
 
