@@ -1,32 +1,32 @@
-# 🏬 ShopProject  
+# ShopProject 🏬
 
 A complete ASP.NET Core MVC and Blazor Server web application.  
 This project demonstrates modern web development concepts using the MVC pattern, Entity Framework Core, and real-world features such as routing, model binding, validation, testing, interactivity, and authentication/authorization.
 
 ---
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Branches](#branches)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Database Setup](#database-setup)
-- [How to Run](#how-to-run)
-- [Testing](#testing)
-- [Learnings](#learnings)
-- [License](#license)
+## Table of Contents 🧩
+- [Overview](#overview-)
+- [Features](#features-)
+- [Branches](#branches-)
+- [Tech Stack](#tech-stack-)
+- [Architecture](#architecture-)
+- [Database Setup](#database-setup-)
+- [How to Run](#how-to-run-)
+- [Testing](#testing-)
+- [Learnings](#learnings-)
+- [License](#license-)
 
 ---
 
-## Overview
+## Overview 🪄
 
 The project combines **ASP.NET Core MVC** and **Blazor Server components** to deliver both traditional server-rendered pages and rich, interactive UI experiences.  
 Each branch represents a different milestone, starting with MVC basics and progressing toward a complete, functional web app with authentication.
 
 ---
 
-## Features
+## Features ✨
 
 - ASP.NET Core MVC architecture  
 - Blazor Server components for interactive UI and real-time updates  
@@ -41,7 +41,7 @@ Each branch represents a different milestone, starting with MVC basics and progr
 
 ---
 
-## Branches
+## Branches 🌿
 
 | Branch | Description |
 |--------|--------------|
@@ -55,7 +55,7 @@ Each branch isolates one core learning module to make it easy to explore the cod
 
 ---
 
-## Tech Stack
+## Tech Stack 🧱
 
 - **.NET 8 / ASP.NET Core MVC**  
 - **Blazor Server** for interactive UI components and dynamic client updates  
@@ -66,7 +66,7 @@ Each branch isolates one core learning module to make it easy to explore the cod
 
 ---
 
-## Architecture
+## Architecture 📁
 
 ```
 ShopProject/
@@ -85,7 +85,7 @@ ShopProject/
 
 ---
 
-## Database Setup
+## Database Setup 🗄️
 
 Make sure SQL Server LocalDB is installed.  
 Then run the following commands in the terminal:
@@ -105,7 +105,7 @@ Sample connection string (inside `appsettings.json`):
 
 ---
 
-## How to Run
+## How to Run ▶️
 
 Clone the repo and restore dependencies:
 
@@ -120,7 +120,7 @@ Visit: **https://localhost:5001/** (or the port shown in the console)
 
 ---
 
-## Testing
+## Testing 🧪
 
 Unit tests are located under `/ShopProjectTests`.
 
@@ -136,7 +136,7 @@ Covers:
 
 ---
 
-## Learnings
+## Learnings 🧠
 
 This project reinforced key ASP.NET Core concepts including:
 - MVC pattern and separation of concerns  
@@ -149,7 +149,7 @@ This project reinforced key ASP.NET Core concepts including:
 
 ---
 
-## License
+## License 📜
 
 This project is open for educational purposes.  
 Feel free to fork or clone for learning, practice, or portfolio use.
