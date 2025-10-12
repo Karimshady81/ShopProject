@@ -12,8 +12,9 @@ var connectionString = builder.Configuration.GetConnectionString
 builder.Services.AddDbContext<ShopProjectDbContext>(options =>
     options.UseSqlServer(connectionString)); ;
 
-builder.Services.AddDefaultIdentity<IdentityUser>()
-    .AddEntityFrameworkStores<ShopProjectDbContext>();
+builder.Services.AddDefaultIdentity<IdentityUser>(options => 
+        options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ShopProjectDbContext>();
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IPieRepository, PieRepository>();
@@ -47,7 +48,7 @@ var app = builder.Build();
 app.UseStaticFiles();
 app.UseSession();
 app.UseAuthentication();
-
+app.UseAuthorization(); 
 
 if (app.Environment.IsDevelopment())
 {
